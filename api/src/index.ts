@@ -2,6 +2,8 @@ import "reflect-metadata";
 import * as express from "express";
 import routes from "./routes";
 import * as config from "config";
+import connect from "./db/connect.db";
+import logger from "./logger";
 
 const PORT = config.get("port") as number;
 const HOST = config.get("host") as string;
@@ -12,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.listen(PORT, HOST, () => {
-  console.log(`Server listening at http://${HOST}:${PORT}`);
+  logger.info(`Server listening at http://${HOST}:${PORT}`);
+  connect();
   routes(app);
 });
