@@ -5,3 +5,5 @@ enum ResponseMessage {
   EMAIL_EXISTS = "Email already exists",
   MOBILE_EXISTS = "Mobile number already exists",
 }
+
+export default ResponseMessage;
