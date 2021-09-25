@@ -1,7 +1,7 @@
-import * as logger from "pino";
+import * as pino from "pino";
 import * as dayjs from "dayjs";
 
-const log = logger({
+const logger = pino({
   prettyPrint: true,
   base: {
     pid: false,
