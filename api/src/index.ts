@@ -8,6 +8,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.listen(3001, () => {
-  console.log(`server listening on port 3000`);
+  console.log(`server listening on port 3001`);
   routes(app);
 });
