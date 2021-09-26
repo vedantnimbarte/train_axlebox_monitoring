@@ -7,8 +7,14 @@ export async function addUser(input) {
   return result;
 }
 
-export async function getUser(input) {
+export async function getUserByEmail(input) {
   const repository = await getRepository(Users);
-  const result = await repository.findOne({ where: { ...input } });
+  const result = await repository.findOne({ where: { email: input } });
+  return result;
+}
+
+export async function getUserByMobileNo(input) {
+  const repository = await getRepository(Users);
+  const result = await repository.findOne({ where: { mobile: input } });
   return result;
 }
