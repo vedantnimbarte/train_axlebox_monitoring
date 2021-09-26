@@ -1,6 +1,17 @@
-import comparePassword from "./comparePassword";
-import generateSalt from "./generateSalt";
-import hashPassword from "./hashPassword";
+import { pbkdf2Sync, randomBytes } from "crypto";
 
-const password = { generateSalt, hashPassword, comparePassword };
-export default password;
+function generateSalt() {
+  return randomBytes(32).toString("hex");
+}
+
+export function hashPassword(password: string, userSalt?: string) {
+  let salt: string;
+  if (userSalt === undefined || userSalt === null) {
+    salt = generateSalt();
+  }
+  salt = userSalt;
+  let hash = pbkdf2Sync(password.toString(), salt, 1000, 64, "sha512").toString(
+    "hex"
+  );
+  return { hash: hash, salt: salt };
+}
