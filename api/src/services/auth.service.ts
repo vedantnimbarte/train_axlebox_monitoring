@@ -1,8 +1,7 @@
 import ResponseMessage from "../enum/messages.enum";
 import { generateToken } from "../lib/jwt";
-import hashPassword from "../lib/password/hashPassword";
+import { hashPassword } from "../lib/password";
 import getUserId from "../lib/uid";
-import logger from "../logger";
 import {
   addUser,
   getUserByEmail,
