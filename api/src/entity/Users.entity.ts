@@ -1,11 +1,8 @@
-import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Entity, Column, PrimaryGeneratedColumn, PrimaryColumn } from "typeorm";
 
 @Entity()
 export default class Users {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column({
+  @PrimaryColumn({
     length: 100,
     nullable: false,
   })
