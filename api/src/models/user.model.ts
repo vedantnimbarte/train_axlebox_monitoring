@@ -15,6 +15,6 @@ export async function getUserByEmail(input) {
 
 export async function getUserByMobileNo(input) {
   const repository = await getRepository(Users);
-  const result = await repository.findOne({ where: { mobile: input } });
+  const result = await repository.findOne({ where: { mobile_no: input } });
   return result;
 }
