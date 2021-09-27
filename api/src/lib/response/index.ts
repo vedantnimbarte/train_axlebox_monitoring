@@ -6,11 +6,9 @@ export default function generateResponse(
   message?: string,
   data?: string[]
 ) {
-  return response.status(http_code).send(
-    JSON.stringify({
-      success: successCode,
-      message: message,
-      data,
-    })
-  );
+  return response.status(http_code).send({
+    success: successCode,
+    message: message,
+    data,
+  });
 }
