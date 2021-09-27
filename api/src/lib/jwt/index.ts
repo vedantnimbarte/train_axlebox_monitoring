@@ -10,5 +10,12 @@ export function generateToken(payload) {
 }
 
 export function verifyToken(token: string) {
-  return verify(token, secret);
+  let tokenInfo = new Array();
+  verify(token, secret, function (error, decoded) {
+    if (error) {
+      tokenInfo.push({ success: 0 });
+    }
+    tokenInfo.push({ success: 1, message: decoded.userId });
+  });
+  return tokenInfo;
 }
