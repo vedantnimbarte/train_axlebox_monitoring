@@ -13,8 +13,12 @@ const app: express.Express = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(PORT, HOST, () => {
-  logger.info(`Server listening at http://${HOST}:${PORT}`);
+function initializeApi() {
   connect();
   routes(app);
+  logger.info(`Server listening at http://${HOST}:${PORT}`);
+}
+
+app.listen(PORT, HOST, () => {
+  initializeApi();
 });
