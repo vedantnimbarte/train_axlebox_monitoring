@@ -30,7 +30,6 @@ export async function loginUserHandler(req: Request, res: Response) {
   try {
     const { successCode, message, data } = await loginUserService(
       req.body,
-      req.query.token
     );
     data != undefined && responseData.push({ ...data });
     return generateResponse(
