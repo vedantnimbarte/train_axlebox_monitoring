@@ -1,7 +1,8 @@
 import ResponseMessage from "../enum/messages.enum";
-import { generateToken } from "../lib/jwt";
+import { generateToken, verifyToken } from "../lib/jwt";
 import { hashPassword } from "../lib/password";
 import getUserId from "../lib/uid";
+import logger from "../logger";
 import {
   addUser,
   getUserByEmail,
@@ -31,6 +32,7 @@ export async function registerUserService(input) {
 
 export async function loginUserService(input) {
   const { email, password } = input;
+  
   let userData = await getUserByEmail(email);
   let { hash } = hashPassword(password, userData.salt);
   if (userData === undefined) {
