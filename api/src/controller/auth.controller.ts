@@ -10,6 +10,7 @@ import {
 let responseData = new Array();
 
 export async function registerUserHandler(req: Request, res: Response) {
+  responseData.length = 0;
   try {
     const { successCode, message } = await registerUserService(req.body);
     return generateResponse(
@@ -25,9 +26,13 @@ export async function registerUserHandler(req: Request, res: Response) {
 }
 
 export async function loginUserHandler(req: Request, res: Response) {
+  responseData.length = 0;
   try {
-    const { successCode, message, data } = await loginUserService(req.body);
-    responseData.push({ ...data });
+    const { successCode, message, data } = await loginUserService(
+      req.body,
+      req.query.token
+    );
+    data != undefined && responseData.push({ ...data });
     return generateResponse(
       successCode,
       res,
