@@ -1,8 +1,12 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { SignIn } from "./pages";
 function App() {
   return (
-    <div>
-      <h1>axlebox temperature monitoring</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login" component={SignIn} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
