@@ -1,3 +1,4 @@
 import TopBar from "./dashboard/Topbar";
 import TrainsList from "./dashboard/TrainsList";
-export { TopBar, TrainsList };
+import TempDetails from "./dashboard/TempDetails";
+export { TopBar, TrainsList, TempDetails };
