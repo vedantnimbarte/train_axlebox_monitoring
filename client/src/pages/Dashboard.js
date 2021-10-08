@@ -1,6 +1,12 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
-import { TopBar, TrainsList, TempDetails, TrainDetails } from "../components";
+import {
+  TopBar,
+  TrainsList,
+  TempDetails,
+  TrainDetails,
+  CoachTempChart,
+} from "../components";
 function Dashboard() {
   return (
     <Box container sx={{ height: "100vh" }}>
@@ -13,6 +19,7 @@ function Dashboard() {
         <Grid md={2}>
           <TempDetails />
           <TrainDetails />
+          <CoachTempChart />
         </Grid>
       </Box>
     </Box>
