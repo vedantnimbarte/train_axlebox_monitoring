@@ -6,12 +6,13 @@ import {
   TempDetails,
   TrainDetails,
   CoachTempChart,
+  TrainInfoFormBar,
 } from "../components";
 function Dashboard() {
   return (
     <Box container sx={{ height: "100vh" }}>
       <TopBar />
-      <TopBar />
+      <TrainInfoFormBar />
       <Box sx={{ display: "flex" }}>
         <Grid md={2}>
           <TrainsList />
