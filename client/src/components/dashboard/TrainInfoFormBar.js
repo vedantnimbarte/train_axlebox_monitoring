@@ -19,9 +19,12 @@ function TrainInfoFormBar() {
               id="outlined-basic"
               label="Train No"
               variant="outlined"
+              margin="normal"
+              size="small"
               required
+              sx={{ width: "10%" }}
             />
-            <FormControl sx={{ width: 0.1 }}>
+            <FormControl margin="normal" size="small" sx={{ width: "10%" }}>
               <InputLabel id="demo-simple-select-label">Train Type</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
@@ -39,9 +42,12 @@ function TrainInfoFormBar() {
               id="outlined-basic"
               label="No of locomotive"
               variant="outlined"
+              margin="normal"
+              size="small"
+              sx={{ width: "15%" }}
               required
             />
-            <FormControl sx={{ width: 0.2 }}>
+            <FormControl sx={{ width: "15%" }} margin="normal" size="small">
               <InputLabel id="demo-simple-select-label">
                 Locomotive Type
               </InputLabel>
