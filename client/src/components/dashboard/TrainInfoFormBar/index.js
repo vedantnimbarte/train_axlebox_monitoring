@@ -12,19 +12,18 @@ import Grid from "@mui/material/Grid";
 function TrainInfoFormBar() {
   return (
     <Box>
-      <AppBar position="static" sx={{ backgroundColor: "white", padding: 1 }}>
+      <AppBar position="static" sx={{ backgroundColor: "white" }}>
         <Toolbar>
           <Grid sx={{ display: "flex", width: 1 }}>
             <TextField
               id="outlined-basic"
               label="Train No"
               variant="outlined"
-              margin="normal"
               size="small"
               required
               sx={{ width: "10%" }}
             />
-            <FormControl margin="normal" size="small" sx={{ width: "10%" }}>
+            <FormControl size="small" sx={{ width: "10%" }}>
               <InputLabel id="demo-simple-select-label">Train Type</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
@@ -42,12 +41,11 @@ function TrainInfoFormBar() {
               id="outlined-basic"
               label="No of locomotive"
               variant="outlined"
-              margin="normal"
               size="small"
               sx={{ width: "15%" }}
               required
             />
-            <FormControl sx={{ width: "15%" }} margin="normal" size="small">
+            <FormControl sx={{ width: "15%" }} size="small">
               <InputLabel id="demo-simple-select-label">
                 Locomotive Type
               </InputLabel>

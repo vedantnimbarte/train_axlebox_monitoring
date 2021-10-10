@@ -5,6 +5,7 @@ import { purple, grey } from "@mui/material/colors";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
+
 function TempDetails() {
   return (
     <Paper
