@@ -7,7 +7,6 @@ import {
   TrainDetails,
   CoachTempChart,
   TrainInfoFormBar,
-  AxleTempList,
 } from "../components";
 
 function Dashboard() {
@@ -24,9 +23,6 @@ function Dashboard() {
           <TrainDetails />
           <CoachTempChart />
         </Grid>
-        {/* <Grid md={2}>
-          <AxleTempList />
-        </Grid> */}
       </Box>
     </Box>
   );
