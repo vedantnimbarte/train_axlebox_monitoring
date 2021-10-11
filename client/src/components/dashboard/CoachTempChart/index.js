@@ -34,7 +34,6 @@ function CoachTempChart() {
     <Paper
       sx={{
         margin: 2,
-        width: "30vw",
         height: "40vh",
       }}
     >

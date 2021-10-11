@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import { purple } from "@mui/material/colors";
+import { Colors, FontSizes } from "../../../themes";
 
 export default function TrainsList() {
   return (
@@ -18,10 +19,11 @@ export default function TrainsList() {
     >
       <Box
         sx={{
-          backgroundColor: purple[700],
-          color: "white",
+          backgroundColor: Colors.primary,
+          color: Colors.white,
           textAlign: "center",
-          fontSize: 20,
+          fontSize: FontSizes.lg,
+          borderRadius: 1,
         }}
       >
         <Typography>Trains</Typography>

@@ -12,7 +12,6 @@ function TempDetails() {
     <Paper
       sx={{
         margin: 2,
-        width: "30vw",
         height: "25vh",
       }}
     >
