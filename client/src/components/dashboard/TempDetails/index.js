@@ -14,15 +14,16 @@ function TempDetails() {
         margin: 2,
         width: "30vw",
         height: "25vh",
-        padding: 1,
       }}
     >
       <Typography
         sx={{
-          color: Colors.primary,
+          color: Colors.white,
           textAlign: "center",
           marginBottom: 2,
           fontSize: FontSizes.xl,
+          backgroundColor: Colors.primary,
+          borderRadius: 1,
         }}
       >
         Axle Box Temp. Details
@@ -35,7 +36,7 @@ function TempDetails() {
             </Typography>
             <Typography
               sx={{
-                color: purple[500],
+                color: Colors.primary,
                 fontWeight: 800,
                 fontSize: FontSizes.xxl,
               }}
@@ -51,7 +52,7 @@ function TempDetails() {
             </Typography>
             <Typography
               sx={{
-                color: purple[500],
+                color: Colors.primary,
                 fontWeight: 800,
                 fontSize: FontSizes.xxl,
               }}
