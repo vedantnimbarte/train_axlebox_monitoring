@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import { Colors, FontSizes } from "../themes";
 
 function ControlPanel() {
@@ -25,12 +26,16 @@ function ControlPanel() {
       }}
     >
       {menu.map((item) => (
-        <Card
+        <Grid
+          sm={6}
+          md={12}
           sx={{
             width: "20vw",
             margin: 1,
-            // padding: 2,
             alignItems: "center",
+            backgroundColor: Colors.white,
+            boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
+            borderRadius: 1,
           }}
         >
           <Box sx={{ textAlign: "center", cursor: "pointer" }}>
@@ -56,7 +61,7 @@ function ControlPanel() {
               {item.title}
             </Typography>
           </Box>
-        </Card>
+        </Grid>
       ))}
     </Box>
   );
