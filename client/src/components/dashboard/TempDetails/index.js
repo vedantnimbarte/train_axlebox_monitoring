@@ -28,7 +28,7 @@ function TempDetails() {
         Axle Box Temp. Details
       </Typography>
       <Box sx={{ display: "flex", textAlign: "center", alignItems: "center" }}>
-        <Grid md={4}>
+        <Grid md={3}>
           <Box sx={{ margin: 1 }}>
             <Typography sx={{ fontSize: FontSizes.md, fontWeight: 500 }}>
               Max Temp
@@ -44,7 +44,7 @@ function TempDetails() {
             </Typography>
           </Box>
         </Grid>
-        <Grid md={4}>
+        <Grid md={3}>
           <Box sx={{ margin: 1 }}>
             <Typography sx={{ fontSize: FontSizes.md, fontWeight: 500 }}>
               Min Temp
@@ -60,7 +60,7 @@ function TempDetails() {
             </Typography>
           </Box>
         </Grid>
-        <Grid md={4}>
+        <Grid md={6}>
           <Card
             sx={{
               backgroundColor: grey[700],
