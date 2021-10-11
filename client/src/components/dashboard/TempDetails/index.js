@@ -21,9 +21,10 @@ function TempDetails() {
           color: Colors.white,
           textAlign: "center",
           marginBottom: 2,
-          fontSize: FontSizes.xl,
+          fontSize: FontSizes.lg,
           backgroundColor: Colors.primary,
           borderRadius: 1,
+          letterSpacing: 1,
         }}
       >
         Axle Box Temp. Details
