@@ -11,19 +11,19 @@ import {
 
 function Dashboard() {
   return (
-    <Box container sx={{ height: "100vh" }}>
+    <Box>
       <TopBar />
       <TrainInfoFormBar />
-      <Box sx={{ display: "flex", flexDirection: "row" }}>
-        <Grid md={2}>
+      <Grid sm={12} md={12} lg={12} sx={{ display: "flex" }}>
+        <Grid md={2.5}>
           <TrainsList />
         </Grid>
-        <Grid md={2}>
+        <Grid md={4}>
           <TempDetails />
           <TrainDetails />
           <CoachTempChart />
         </Grid>
-      </Box>
+      </Grid>
     </Box>
   );
 }
