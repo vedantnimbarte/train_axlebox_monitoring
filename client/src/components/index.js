@@ -4,6 +4,7 @@ import TempDetails from "./dashboard/TempDetails";
 import TrainDetails from "./dashboard/TrainDetails";
 import CoachTempChart from "./dashboard/CoachTempChart";
 import TrainInfoFormBar from "./dashboard/TrainInfoFormBar";
+import AxleTempList from "./dashboard/AxleTempList";
 
 export {
   TopBar,
@@ -12,4 +13,5 @@ export {
   TrainDetails,
   CoachTempChart,
   TrainInfoFormBar,
+  AxleTempList,
 };
