@@ -2,7 +2,6 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import { purple } from "@mui/material/colors";
 import { Bar } from "react-chartjs-2";
 import { Colors, FontSizes } from "../../../themes";
 

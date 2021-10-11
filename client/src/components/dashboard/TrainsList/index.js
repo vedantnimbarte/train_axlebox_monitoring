@@ -6,7 +6,6 @@ import ListSubheader from "@mui/material/ListSubheader";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
-import { purple } from "@mui/material/colors";
 import { Colors, FontSizes } from "../../../themes";
 
 export default function TrainsList() {
