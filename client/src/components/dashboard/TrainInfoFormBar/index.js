@@ -8,11 +8,12 @@ import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Grid from "@mui/material/Grid";
+import { COLORS } from "../../../themes";
 
 function TrainInfoFormBar() {
   return (
     <Box>
-      <AppBar position="static" sx={{ backgroundColor: "white" }}>
+      <AppBar position="static" sx={{ backgroundColor: COLORS.white }}>
         <Toolbar>
           <Grid sx={{ display: "flex", width: 1 }}>
             <TextField
