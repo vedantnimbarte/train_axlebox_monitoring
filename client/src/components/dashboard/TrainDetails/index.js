@@ -26,6 +26,7 @@ function TrainDetails() {
           backgroundColor: Colors.primary,
           borderRadius: 1,
           fontSize: FontSizes.lg,
+          letterSpacing: 1,
         }}
       >
         Train Info
