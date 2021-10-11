@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { purple } from "@mui/material/colors";
 import { Bar } from "react-chartjs-2";
+import { Colors, FontSizes } from "../../../themes";
 
 function CoachTempChart() {
   const data = {
@@ -12,7 +13,7 @@ function CoachTempChart() {
       {
         label: "Coach Temp Hits",
         data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: purple[700],
+        backgroundColor: Colors.primary,
       },
     ],
   };
@@ -33,14 +34,20 @@ function CoachTempChart() {
     <Paper
       sx={{
         margin: 2,
-        width: "45vw",
-        height: "55vh",
-        padding: 1,
+        width: "30vw",
+        height: "40vh",
       }}
     >
       <Typography
-        variant="h5"
-        sx={{ color: purple[700], textAlign: "center", marginBottom: 1 }}
+        sx={{
+          color: Colors.white,
+          textAlign: "center",
+          marginBottom: 1,
+          backgroundColor: Colors.primary,
+          borderRadius: 1,
+          fontSize: FontSizes.lg,
+          letterSpacing: 1,
+        }}
       >
         Coach Wise Temp.
       </Typography>
