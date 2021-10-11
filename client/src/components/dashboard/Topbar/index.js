@@ -7,7 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { COLORS } from "../../../themes";
+import { Colors } from "../../../themes";
 
 export default function TopBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -25,7 +25,7 @@ export default function TopBar() {
       <AppBar
         position="static"
         sx={{
-          backgroundColor: COLORS.primary,
+          backgroundColor: Colors.primary,
           minHeight: "40px",
           maxHeight: "50px",
           justifyContent: "center",
