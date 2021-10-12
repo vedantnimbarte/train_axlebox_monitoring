@@ -3,6 +3,7 @@ import * as config from "config";
 import { createConnection } from "typeorm";
 import logger from "../logger";
 import Users from "../entity/Users.entity";
+import Temp_Data from "../entity/Temperature.entity";
 export default function connect() {
   const db_host = config.get("dbHost") as string;
   const db_user = config.get("dbUser") as string;
@@ -19,7 +20,7 @@ export default function connect() {
     username: db_user,
     password: db_password,
     database: db_name,
-    entities: [Users],
+    entities: [Users, Temp_Data],
     synchronize: true,
     logging: false,
   })
